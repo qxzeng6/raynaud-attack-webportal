@@ -1,0 +1,79 @@
+.alert-indicator {
+    color: red;
+    font-weight: bold;
+}
+.patient-list-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.patient-table th,
+.patient-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.patient-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.alert-indicator {
+    color: red;
+    font-weight: bold;
+}
+
+.patient-table tr:hover {
+    background-color: #ddd;
+}
+
+.username-btn {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .username-btn:hover {
+    text-decoration: none;
+  }
+
+  .patient-list-container {
+    position: relative;
+    /* Rest of your styles... */
+}
+
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #d9534f; /* Bootstrap 'btn-danger' color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c9302c; /* Darker shade for hover */
+}
+
+  

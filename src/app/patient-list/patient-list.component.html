@@ -1,0 +1,24 @@
+<div class="patient-list-container">
+    <h2>Partient List</h2>
+    <button class="logout-button" (click)="onLogout()">Logout</button>
+    <table class="patient-table">
+      <thead>
+        <tr>
+          <th>Alert</th>
+          <th>Username</th>
+          <th>Last Time of Report</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let partient of partientList">
+          <td>
+                <span *ngIf="shouldShowAlert(partient.lastAttackDate)" class="alert-indicator">Alert!</span>
+          </td>
+          <span class="username-btn" (click)="onUsernameClick(partient.userName)">
+            {{ partient.userName }}
+          </span>
+          <td>{{ partient.lastAttackDate | date: 'medium' }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

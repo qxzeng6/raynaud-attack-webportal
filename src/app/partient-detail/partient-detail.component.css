@@ -1,0 +1,129 @@
+.table-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .styled-table thead tr {
+    background-color: #007bff; /* Changed from green to blue */
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff; /* Changed from green to blue */
+  }
+  
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #007bff; /* Changed from green to blue */
+  }
+  
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add more styles for your pagination controls here */
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-controls button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls span {
+    margin: 0 10px;
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Or any height you desire */
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  .custom-chart .ngx-charts-x-axis text {
+    font-size: 10px; /* Adjust the size as needed */
+  }
+  .participant-name {
+    text-align: center;
+    font-size: 28px; /* Larger font size */
+    margin-top: 30px;
+    font-weight: bold;
+    color: #2a6496; /* A pleasant shade of blue, adjust as per your color scheme */
+    border-radius: 8px;
+    background-color: #f2f2f2; 
+    margin-bottom: 20px;
+
+  }
+  
+  /* Additional styling for overall aesthetics */
+  /* */
+  .chart-title {
+    text-align: center;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 20px; /* Spacing between the title and the chart */
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+   

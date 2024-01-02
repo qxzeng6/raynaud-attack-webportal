@@ -1,0 +1,48 @@
+<p class="participant-name">participant : {{userName}}</p>
+<div class="table-container">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Attack Date</th>
+          <th>Attack Time</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of patientRecords | slice:0:10">
+          <td>{{ record.attackDate | date: 'mediumDate' }}</td>
+          <td>{{ record.attackTime }}</td>
+          <td>{{ record.location }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="chart-title">Daily Records for the Past Seven Days</h3>
+    <ngx-charts-bar-vertical
+    class="chart-container"
+    [view]="[500, 300]" 
+    [scheme]="colorScheme"
+    [results]="chartData"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Date'"
+    [yAxisLabel]="'Number of Records'">
+  </ngx-charts-bar-vertical>
+    <div class="pagination-controls">
+      <!-- Pagination controls go here -->
+      <button (click)="changePage(currentPage - 1)" 
+      [disabled]="currentPage === 1">Previous</button>
+
+<span>Page {{ currentPage }} of {{ totalPages }}</span>
+
+
+<button (click)="changePage(currentPage + 1)" 
+      [disabled]="currentPage === totalPages">Next</button>
+    </div>
+    <button class="back-button" (click)="goBack()">Back</button>
+
+
+</div>
+  
