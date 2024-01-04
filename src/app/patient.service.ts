@@ -9,10 +9,10 @@ export class PatientService {
   constructor(private http: HttpClient) { }
 
   getPatientList(): Observable<any> {
-    return this.http.get('http://localhost:8080/clinicians/listAll');
+    return this.http.get('http://143.198.9.41:8080/clinicians/listAll');
 
   }
   getPartient(userName: string): Observable<any> {  
-    return this.http.get('http://localhost:8080/clinicians/'+userName);
+    return this.http.get('http://143.198.9.41:8080/clinicians/'+userName);
   }
 }
