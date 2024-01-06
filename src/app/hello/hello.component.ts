@@ -22,7 +22,7 @@ export class HelloComponent{
       }),
       responseType: 'text' as 'json' // Telling Angular to expect a text response
     };
-    this.http.post('http://143.198.9.41:8080/clinicians/signin', {userName:this.Username,password:this.Password},httpOptions)
+    this.http.post('http://143.198.9.41:80/clinicians/signin', {userName:this.Username,password:this.Password},httpOptions)
       .subscribe(
         response => {
           console.log(response.toString());
